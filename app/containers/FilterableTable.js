@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { filterTable } from '../actions';
-import ProductTable from '../components/ProductTable';
+import ProductTable from '../components/OldBoilerPlate/ProductTable';
 
 const FilterableTable = ({ filter, onFilter }) => {
     let input;

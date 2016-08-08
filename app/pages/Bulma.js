@@ -1,9 +1,12 @@
 import React from 'react';
+
 import TalkToPerLA from '../components/TalkToPerLA';
 import ChatList from '../components/ChatList';
 import VerticalBar from '../components/VerticalBar';
 import BulmaSection from '../components/BulmaSection';
-import TabHolder from '../components/TabHolder';
+import TabHolder from '../components/Tabs/TabHolder';
+import LeveledNav from '../components/LeveledNav';
+import Bulma4ColumnTiles from '../components/BulmaTiles4Columns';
 
 const Bulma = () => {
     return (
@@ -27,17 +30,17 @@ const Bulma = () => {
                     Home
                   </a>
                   <a className="nav-item">
-                    Examples
+                    Contact Us
                   </a>
                   <a className="nav-item">
-                    Documentation
+                    What We're About
                   </a>
                   <span className="nav-item">
                     <a className="button is-info is-inverted">
                       <span className="icon">
                         <i className="fa fa-github"></i>
                       </span>
-                      <span>Download</span>
+                      <span>Github Repo</span>
                     </a>
                   </span>
                 </div>
@@ -86,9 +89,12 @@ const Bulma = () => {
         <br /><hr /><br />
         <BulmaSection />
         <br /><hr /><br />
-        <TabHolder />
+        <div className="container"><TabHolder /></div>
         <br /><hr /><br />
-        <VerticalBar />
+        <LeveledNav />
+        <br /><hr /><br />
+        <Bulma4ColumnTiles />
+        <br /><hr /><br />
       </div>
     );
 };

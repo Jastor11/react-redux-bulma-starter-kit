@@ -4,11 +4,11 @@ const ChatMessage = ({message, align}) => {
     return align === 'right' ?
         <div className="column is-three-quarters box is-offset-one-quarter">
           <article className="media">
-            <div className="media-right">
+            <div className="media-left">
               <button className="delete"></button>
             </div>
-            <div className="media-content media-right">
-              <div className="content ">
+            <div className="media-content">
+              <div className="content has-text-right">
                 <p>
                   <strong>{message.owner} - </strong>
                   <small> {message.handle} |</small>
@@ -19,6 +19,9 @@ const ChatMessage = ({message, align}) => {
               </div>
               <nav className="level">
                 <div className="level-left">
+                    <div className="level-item"></div>
+                </div>
+                <div className="level-right">
                   <a className="level-item">
                     <span className="icon is-small"><i className="fa fa-reply"></i></span>
                   </a>
