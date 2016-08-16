@@ -19,8 +19,9 @@ class TalkToPerLA extends Component {
     onKeyUp(event) {
         if(event.keyCode === 13 && trim(event.target.value) !== '') {
             event.preventDefault();
-
-            this.props.postToPerla(this.state.message);
+            const content = this.state.message.trim();
+            this.props.listBotsAtDylansAPI(content);
+//             this.props.postToPerla(content);
             this.setState({
                 message: ''
             });
@@ -31,8 +32,8 @@ class TalkToPerLA extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-
-        this.props.postToPerla(this.state.message);
+        this.props.listBotsAtDylansAPI(this.state.message);
+//         this.props.postToPerla(this.state.message);
 
         this.setState({ message: ''});
         console.log('Sent a new message: ', event.target.value);
@@ -74,7 +75,8 @@ class TalkToPerLA extends Component {
 
 TalkToPerLA.propTypes = {
     name: PropTypes.string,
-    postToPerla: PropTypes.func
+    postToPerla: PropTypes.func,
+    listBotsAtDylansAPI: PropTypes.func
 };
 
 

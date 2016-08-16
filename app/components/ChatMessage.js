@@ -36,7 +36,7 @@ const ChatMessage = ({message, align}) => {
             </div>
             <div className="media-right">
               <figure className="image is-64x64">
-                <img src="http://placehold.it/128x128" alt="Image" />
+                <img src="https://67.media.tumblr.com/avatar_aa68696648f0_128.png" alt="Image" />
               </figure>
             </div>
           </article>
@@ -46,7 +46,7 @@ const ChatMessage = ({message, align}) => {
           <article className="media">
             <div className="media-left">
               <figure className="image is-64x64">
-                <img src="http://placehold.it/128x128" alt="Image" />
+                <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/2/005/04f/1e9/00eb89f.jpg" alt="Image" />
               </figure>
             </div>
             <div className="media-content">
@@ -85,7 +85,8 @@ ChatMessage.propTypes = {
         owner: React.PropTypes.string,
         time: React.PropTypes.string,
         handle: React.PropTypes.string,
-        content: React.PropTypes.string
+        content: React.PropTypes.string,
+        avatar: React.PropTypes.string
     }).isRequired,
     align: React.PropTypes.string
 };

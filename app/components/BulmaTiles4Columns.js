@@ -128,7 +128,7 @@ const BulmaTiles4Columns = () => {
               </div>
             </article>
           </div>
-      </div>
+        </div>
       </div>
     );
 };

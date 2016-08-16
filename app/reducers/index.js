@@ -20,9 +20,18 @@ const talkToPerla = (state = '', action) => {
     }
 };
 
+const apiCallTestToGetBots = (state = '', action) => {
+    switch (action.type) {
+        case types.LIST_BOTS:
+            return action.answer;
+        default:
+            return state;
+    }
+};
 
 const rootReducer = combineReducers({
     talkToPerla,
+    apiCallTestToGetBots,
     filter,
     routing
 });

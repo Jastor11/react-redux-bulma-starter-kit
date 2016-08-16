@@ -17,6 +17,7 @@
   "author": "Jean-Pierre Sierens",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.13.1",
     "bulma": "^0.1.2",
     "file-loader": "^0.9.0",
     "font-awesome": "^4.6.3",
